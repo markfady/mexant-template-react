@@ -1,0 +1,13 @@
+/*Global Colors*/
+:root{
+    --greencolor:#43ba7f;
+    --orangecolor:#ff511a;
+    --blackcolor: #212741;
+}
+/*End Global Colors */
+
+/*Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+*{
+font-family: 'Poppins', sans-serif;
+}
