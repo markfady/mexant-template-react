@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
 import Swiper , {Autoplay,Navigation} from 'swiper';
+import image2 from'../../images/slide-01.jpg'
+import image3 from'../../images/slide-02.jpg'
+import image4 from'../../images/slide-03.jpg'
+import './Swipper.css'
+
 Swiper.use([Autoplay,Navigation]); //To make swiper use Navigation feature
 
 const Slider = () => {
@@ -21,15 +26,26 @@ const Slider = () => {
   }, []);
 
   return (
+    <> 
     <div className="dvSlider">
       {/* Slider main container */}
-      <div className="swiper swiper-js">
+      <div className="swiper-container swiper">
         {/* Additional required wrapper */}
         <div className="swiper-wrapper">
           {/* Slides */}
-          <div className="swiper-slide">Slide 1</div>
-          <div className="swiper-slide">Slide 2</div>
-          <div className="swiper-slide">Slide 3</div>
+          <div className="swiper-slide">
+            <div className="slide-inner dataone imageback1">
+              <div className="container">
+                <h2>Slide1</h2>
+              </div>
+            </div>
+          </div>
+
+      
+          <div className="swiper-slide datatwo imageback2"> 
+
+          </div>
+          <div className="swiper-slide datathree imageback3"> </div>
           {/* ... */}
         </div>
         {/* If we need navigation buttons */}
@@ -37,6 +53,7 @@ const Slider = () => {
         <div className="swiper-button-next"></div>
       </div>
     </div>
+    </>
   );
 };
 

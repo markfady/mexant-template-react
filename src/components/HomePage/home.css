@@ -1,17 +1,39 @@
 @import url(../../App.css);
-.logosection img{
-    width: 20%;
-    height: 20%;
-    
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    min-height: 90px;
+    transition: all .5s ease 0s;
+}
+header .container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }
 .main-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    min-height: 80px;
+    background: transparent;
+    display: block;
     font-size: 14px;
     font-weight: 300;
+    color: #ffff;
     letter-spacing: 1px;
-   
+}
+.main-nav img{
+    margin-top: 14px;
+}
+.main-nav ul{
+    display: flex;
+    float: right;
+    margin-top: 40px;
+    background-color: transparent;
+    position: relative;
 }
 .main-nav ul li {
     padding:0px 15px ;
