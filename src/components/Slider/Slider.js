@@ -1,36 +1,43 @@
-import React from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useEffect } from 'react';
+import Swiper , {Autoplay,Navigation} from 'swiper';
+Swiper.use([Autoplay,Navigation]); //To make swiper use Navigation feature
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+const Slider = () => {
+  useEffect(() => {
+     new Swiper('.dvSlider .swiper', {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      speed:5000,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay:{
+        delay: 3000,
+        disableOnInteraction: false,
+      }
+    });
+  }, []);
 
-//Import Pagination
-import { Pagination } from 'swiper/modules';
-
-export default function Slider() {
   return (
-    <>
-      <Swiper
-        slidesPerView={'auto'}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </>
+    <div className="dvSlider">
+      {/* Slider main container */}
+      <div className="swiper swiper-js">
+        {/* Additional required wrapper */}
+        <div className="swiper-wrapper">
+          {/* Slides */}
+          <div className="swiper-slide">Slide 1</div>
+          <div className="swiper-slide">Slide 2</div>
+          <div className="swiper-slide">Slide 3</div>
+          {/* ... */}
+        </div>
+        {/* If we need navigation buttons */}
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
+      </div>
+    </div>
   );
-}
+};
+
+export default Slider;

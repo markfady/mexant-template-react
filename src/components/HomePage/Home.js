@@ -26,7 +26,9 @@ function Home() {
     </header>
      {/* End Header Area */}
      {/* Start Landing Page */}
-    <Slider/>
+  <div>
+  <Slider/>
+  </div>
     </>
   )
 }
