@@ -1,0 +1,33 @@
+.Services{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.service-item{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding:40px 60px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.service-item svg{
+    font-size: 64px;
+    position: absolute;
+    transform: translateX(-50px);
+    margin-left: 11px;
+    color: var(--greencolor);
+}
+.service-item svg:hover{
+    transition: all 0.5s;
+    margin-top: 20px;
+}
+.service-item h4{
+    margin-bottom: 22px;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.service-item p{
+    margin-left: 50px;
+    font-size: 15px;
+    color: var(--blackcolor);
+}
