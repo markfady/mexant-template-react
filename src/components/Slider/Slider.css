@@ -1,0 +1,112 @@
+.swiper-container {
+    height:100vh;
+    margin: 0px;
+    background-color: #212741; /*color between each image or put overflow hidden inside swiper wrapper */
+
+}
+.swiper {
+    width: 1519px !important;
+    height: 100vh !important;
+    overflow: hidden;
+    cursor: grab;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.swiper-slide{
+    width: 1878px;
+    height: 130%;
+    transition: all 0ms ease 0s;
+    flex-shrink: 0;
+    position: relative;
+}
+.slide-inner{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.dataone , .datatwo ,.datathree{
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0ms ease 0s;
+    background-size: cover;
+    background-position: center;
+    
+}
+.imageback1{
+    background-image: url(../../images/slide-01.jpg);
+}
+.imageback2{
+    background-image:url(../../images/slide-02.jpg);
+}
+.imageback3{
+    background-image: url(../../images/slide-03.jpg);
+}
+
+/*Start Styling the Text Part*/
+
+.header-main{
+    position: absolute;
+    width: 50%;
+    top: 15%;
+}
+.header-main h1{
+    color: var(--whitecolor);
+    font-size: 56px;
+    font-weight: 700;
+}
+/* .header-main::before{
+    content: '';
+    position: absolute;
+    height: 2.5%;
+    width: 10%;
+    transform: translateY(250px);
+    border-radius: 7px;
+    background-color: var(--whitecolor);
+} */
+.line{  /*You can make it using before like above !
+     but in component you don't know where to place it before! so you need div */
+    width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    opacity: 1;
+    visibility: visible;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+
+}
+
+.orangetext{
+    color: var(--orangecolor);
+}
+.header-main p{
+    color: var(--whitecolor);
+    font-size: 15px;
+}
+.double-buttons{
+    display: flex;
+    font-size: 14px;
+}
+.double-buttons button{
+    padding: var(--padding-buttonT) var(--padding-buttonR);
+    color: var(--whitecolor);
+    border-radius: 5px;
+}
+.green button{
+    background-color: var(--greencolor);
+    margin-right: 20px;
+}
+.orange button{
+    background-color: var(--orangecolor);
+}
+/*End Styling the Text Part*/

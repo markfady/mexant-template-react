@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import Swiper , {Autoplay,Navigation} from 'swiper';
-import image2 from'../../images/slide-01.jpg'
-import image3 from'../../images/slide-02.jpg'
-import image4 from'../../images/slide-03.jpg'
-import './Swipper.css'
+import SliderComponent from './SliderComponent';
+import './Slider.css'
+/*Start Importing Animation */
+import 'animate.css';
 
 Swiper.use([Autoplay,Navigation]); //To make swiper use Navigation feature
 
@@ -11,15 +11,13 @@ const Slider = () => {
   useEffect(() => {
      new Swiper('.dvSlider .swiper', {
       slidesPerView: 1,
-      spaceBetween: 50,
-      speed:5000,
+      spaceBetween: 0, //space between each slide
       loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
       autoplay:{
-        delay: 3000,
         disableOnInteraction: false,
       }
     });
@@ -33,21 +31,44 @@ const Slider = () => {
         {/* Additional required wrapper */}
         <div className="swiper-wrapper">
           {/* Slides */}
-          <div className="swiper-slide">
-            <div className="slide-inner dataone imageback1">
-              <div className="container">
-                <h2>Slide1</h2>
-              </div>
-            </div>
-          </div>
 
-      
-          <div className="swiper-slide datatwo imageback2"> 
-
-          </div>
-          <div className="swiper-slide datathree imageback3"> </div>
-          {/* ... */}
-        </div>
+          {/*Start of Slide one*/}
+         <SliderComponent 
+         data="dataone"
+         image="imageback1"
+         first="Get" 
+         second="ready" 
+         third="for your business"
+         fourth="upgrade"
+         fifth="all aspects"
+         text="Mexant HTML5 Template is provided for free of charge. 
+         This layout is based on Boostrap 5 CSS framework. Anyone can download
+        and edit for any professional website. Thank you for visiting TemplateMo website."
+         />
+          <SliderComponent 
+         data="datatwo"
+         image="imageback2"
+         first="Digital" 
+         second="Currency" 
+         third="for you"
+         fourth="Best"
+         fifth="Crypto Tips"
+         text="You will see a bunch of free CSS templates when you search on Google. 
+         TemplateMo website is probably the best one because it is 100% free.It does not ask
+        you anything in return. You have a total freedom to use any template for any purpose.."
+         />
+          <SliderComponent  //Here I want to make the last one colored and skip the other props
+         data="datathree"
+         image="imageback3"
+         first="Best one in Town" 
+         fourth="Crypto"
+         fifth="Services"
+         text="Mexant HTML5 Template is provided for free of charge. 
+         This layout is based on Boostrap 5 CSS framework. Anyone can download
+        and edit for any professional website. Thank you for visiting TemplateMo website."
+         />
+            {/*End of Slide one*/}
+</div>
         {/* If we need navigation buttons */}
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>
