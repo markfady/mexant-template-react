@@ -1,0 +1,21 @@
+@import url(../../App.css);
+.Business {
+  background-image: url(../../images/cta-bg.jpg);
+  padding: 50px;
+  margin-bottom: 92px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.Business .content h1 {
+  color: var(--whitecolor);
+  font-weight: 800;
+  font-size: 32px;
+}
+.Business span {
+  color: var(--greencolor);
+}
+.Business .content span:last-child {
+  color: var(--orangecolor);
+}
