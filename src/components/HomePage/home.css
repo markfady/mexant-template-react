@@ -1,60 +1,60 @@
 @import url(../../App.css);
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100px;
-    min-height: 90px;
-    transition: all .5s ease 0s;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  min-height: 90px;
+  transition: all 0.5s ease 0s;
 }
-header .container{
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+header .container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
-.main-nav{
-    min-height: 80px;
-    background: transparent;
-    display: block;
-    font-size: 14px;
-    font-weight: 300;
-    color: #ffff;
-    letter-spacing: 1px;
+.main-nav {
+  min-height: 80px;
+  background: transparent;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffff;
+  letter-spacing: 1px;
 }
-.main-nav img{
-    margin-top: 14px;
+.main-nav img {
+  margin-top: 14px;
 }
-.main-nav ul{
-    display: flex;
-    float: right;
-    margin-top: 40px;
-    background-color: transparent;
-    position: relative;
+.main-nav ul {
+  display: flex;
+  float: right;
+  margin-top: 40px;
+  background-color: transparent;
+  position: relative;
 }
 .main-nav ul li {
-    padding:0px 15px ;
+  padding: 0px 15px;
 }
 .main-nav ul li:hover {
-   color: var(--orangecolor);
-   cursor: pointer;
-   transition: all 0.3s ease 0s;
+  color: var(--orangecolor);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
-.main-nav ul a{
-    background-color: var(--greencolor);
-    padding: var(--padding-buttonT) var(--padding-buttonR);
-    border-radius: 5px;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 0.5px;
-    text-transform: capitalize;
-    color: #ffff;
-    text-decoration: none;
+.main-nav ul a {
+  background-color: var(--greencolor);
+  padding: var(--padding-buttonT) var(--padding-buttonR);
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #ffff;
+  text-decoration: none;
 }
 .swiper {
-    width: 600px;
-    height: 300px;
-  }
+  width: 600px;
+  height: 300px;
+}

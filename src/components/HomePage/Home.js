@@ -2,6 +2,7 @@ import image1 from "../../images/logo.png"
 import Slider from "../Slider/Slider";
 import Services from "../Services/Services";
 import './home.css';
+import Business from "../Business/Business";
 function Home() {
   return (
     <> 
@@ -70,7 +71,12 @@ function Home() {
           </div>
           /</div>
   </section>
-    {/*Start Services Page*/}
+    {/*End Services Page*/}
+    {/*Start Business Solutions*/}
+    <section>
+        <Business/>
+    </section>
+    {/*End Business Solutions*/}
     </>
   )
 }
