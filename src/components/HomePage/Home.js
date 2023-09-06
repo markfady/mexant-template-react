@@ -3,6 +3,7 @@ import Slider from "../Slider/Slider";
 import Services from "../Services/Services";
 import './home.css';
 import Business from "../Business/Business";
+import About_us from "../About-us/About_us";
 function Home() {
   return (
     <> 
@@ -77,6 +78,11 @@ function Home() {
         <Business/>
     </section>
     {/*End Business Solutions*/}
+     {/*Start About-us*/}
+     <section>
+    <About_us/>
+     </section>
+      {/*End About-us */}
     </>
   )
 }
