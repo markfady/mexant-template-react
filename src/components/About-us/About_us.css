@@ -1,0 +1,50 @@
+@import url(../../App.css);
+.about-us .middle-content {
+  text-align: center;
+}
+.about-us h5,
+.about-us h2 {
+  font-weight: 800;
+}
+.about-us h5 {
+  color: var(--orangecolor);
+  text-transform: uppercase;
+}
+.about-us .middle-content h2 {
+  color: var(--blackcolor);
+}
+.header ul {
+    margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.header ul li {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 50px -3px rgba(0,0,0,0.42);
+  color: var(--blackcolor);
+  padding: 10px;
+  margin-right: 30px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+table{
+    margin-top: 35px;
+}
+thead{
+    display: flex;
+    line-height: 3;
+}
+thead tr{
+    display: flex;
+
+}
+thead tr th{
+    color: var(--blackcolor);
+    font-weight: 600;
+    margin-right: 100px;
+    white-space: nowrap;
+}
+thead hr{
+    color: var(--blackcolor);
+}
