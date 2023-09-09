@@ -19,6 +19,14 @@ body {
     margin: 0px;
     box-sizing: border-box;
 }
+/*Add global styling for not repeating same css*/
 .active{
     color: var(--orangecolor) !important;
+}
+.green button{
+    background-color: var(--greencolor);
+    padding: var(--padding-buttonT) var(--padding-buttonR);
+    color: var(--whitecolor);
+    border-radius: 5px;
+    border: transparent;
 }
