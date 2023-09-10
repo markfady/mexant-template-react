@@ -4,6 +4,7 @@ import Services from "../Services/Services";
 import './home.css';
 import Business from "../Business/Business";
 import About_us from "../About-us/About_us";
+import Financial from "../Financial/Financial";
 function Home() {
   return (
     <> 
@@ -83,6 +84,11 @@ function Home() {
     <About_us/>
      </section>
       {/*End About-us */}
+      {/*Start Financial*/}
+      <section>
+        <Financial/>
+      </section>
+ {/*End Financial*/}
     </>
   )
 }
