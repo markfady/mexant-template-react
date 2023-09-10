@@ -1,0 +1,66 @@
+.Financial{
+    margin-top: 150px;
+    background-image: url(../../images/calculator-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Financial .container .content{
+    display: grid;
+    grid-template-columns:54% 43%;
+}
+
+/*Right Side*/
+.plan-details{
+    margin-top: 50px;
+}
+.plan-details h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--orangecolor);
+    font-weight: 700;
+}
+.plan-details h4{
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--whitecolor);
+}
+.content form {
+    padding-top: 60px;
+}
+.content form  label{
+    display: block;
+    color: var(--whitecolor);
+    font-size: 14px;
+    margin-bottom: 5px
+}
+.content form input , .content form select{
+    background-color: rgba(121,134,151, 0.7);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 42px;
+    color: var(--whitecolor);
+    font-size: 14px;
+    margin-bottom: 30px;
+    outline: none;
+}
+.content form input[type="submit"]{
+    font-size: 14px;
+    color: var(--whitecolor);
+    background-color: var(--orangecolor);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    border: none;
+    transition: all .3s;
+    width: fit-content;
+}
+#subject , .content form select {
+    width: 87%;
+}
