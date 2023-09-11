@@ -5,6 +5,7 @@ import './home.css';
 import Business from "../Business/Business";
 import About_us from "../About-us/About_us";
 import Financial from "../Financial/Financial";
+import Carousel from "../Testimonials/Carousel.js";
 function Home() {
   return (
     <> 
@@ -89,6 +90,11 @@ function Home() {
         <Financial/>
       </section>
  {/*End Financial*/}
+ {/* Start Testimonials */}
+ <section>
+  <Carousel/>
+ </section>
+  {/*End Testimonials*/}
     </>
   )
 }
