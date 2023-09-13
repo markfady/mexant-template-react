@@ -1,21 +1,47 @@
 .top-title{
     text-align: center;
+    margin-top: 50px;
+}
+.top-title h5{
+    color: var(--orangecolor);
+    font-weight: 800;
+}
+.top-title h3{
+    color: var(--blackcolor);
+    font-weight: 800;
 }
 .item{
     border-radius: 15px;
-    padding: 50px 320px 50px 50px;
+    padding: 50px 285px 50px 80px;
     background-color: #fff;
     position: relative;
     overflow: hidden;
     margin: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     padding-top: 35px;
+    position: relative;
 }
-.item img {
+.item svg{
+    padding: 5px 10px;
+    color: var(--whitecolor);
+    background-color: var(--greencolor);
+    font-size: 35px;
+    margin: 10px;
+}
+.item p:first-of-type{
+    color: var(--blackcolor);
+}
+.item h4{
+    font-weight: 800;
+    color: var(--blackcolor);
+}
+.item p:nth-child(4){
+    color: var(--greencolor);
+    font-weight: 800;
+}
+.owl-carousel .owl-item img{
+    width: 22%;
     position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 300px;
-    border-radius: 5px;
+    left: 78%;
+    top: 0%;
 }
