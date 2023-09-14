@@ -1,0 +1,8 @@
+.companies{
+    background-color: var(--blackcolor);
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+}
