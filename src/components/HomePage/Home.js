@@ -7,6 +7,7 @@ import About_us from "../About-us/About_us";
 import Financial from "../Financial/Financial";
 import Carousel from "../Testimonials/Carousel.js";
 import Companies from "../Companies/Companies";
+import Footer from "../Footer/Footer";
 function Home() {
   return (
     <>
@@ -105,6 +106,11 @@ function Home() {
         <Companies/>
       </section>
       {/* End Companies*/}
+      {/*Start Footer*/}
+      <footer>
+        <Footer/>
+      </footer>
+      {/*End Footer*/}
     </>
   );
 }
