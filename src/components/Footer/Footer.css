@@ -1,0 +1,12 @@
+.footer{
+    background-color: #181d30;
+}
+.footer p {
+    color: var(--whitecolor);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+.text p:last-child{
+    margin: 0px;
+}
